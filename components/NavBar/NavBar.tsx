@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import {
   Icon2fa,
   IconBellRinging,
@@ -17,31 +18,30 @@ import classes from './NavBar.module.css';
 
 const data = [
   { link: '', label: 'Notifications', icon: IconBellRinging },
-  { link: '', label: 'Home Feed', icon: IconReceipt2 },
-  { link: '', label: 'Latest News', icon: IconFingerprint },
-  { link: '', label: 'Your Games', icon: IconKey },
-  { link: '', label: 'Streaming', icon: IconDatabaseImport },
-  { link: '', label: 'Esports', icon: Icon2fa },
-  { link: '', label: 'Other Settings', icon: IconSettings },
+  { link: '/', label: 'Home Feed', icon: IconReceipt2 },
+  { link: '/News', label: 'Latest News', icon: IconFingerprint },
+  { link: '/Streaming', label: 'Your Games', icon: IconKey },
+  { link: '/YourGames', label: 'Streaming', icon: IconDatabaseImport },
+  { link: '/Esports', label: 'Esports', icon: Icon2fa },
+  { link: '/Settings', label: 'Other Settings', icon: IconSettings },
 ];
 
 export function NavBar() {
-  const [active, setActive] = useState('Billing');
+  const [active, setActive] = useState('Home Feed');
 
   const links = data.map((item) => (
-    <a
+    <Link
       className={classes.link}
       data-active={item.label === active || undefined}
       href={item.link}
       key={item.label}
-      onClick={(event) => {
-        event.preventDefault();
+      onClick={() => {
         setActive(item.label);
       }}
     >
       <item.icon className={classes.linkIcon} stroke={1.5} />
       <span>{item.label}</span>
-    </a>
+    </Link>
   ));
 
   return (
