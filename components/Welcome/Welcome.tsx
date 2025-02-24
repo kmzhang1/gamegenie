@@ -1,23 +1,18 @@
-import { Anchor, Text, Title } from '@mantine/core';
+import { Anchor, Box, Text, Title } from '@mantine/core';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
   return (
-    <>
-      <Title className={classes.title} ta="center" mt={100}>
+    <Box className="flex flex-col justify-center items-center text-center">
+      <Title className={classes.title} ta="center">
         Welcome to{' '}
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
+          GameGenie
         </Text>
       </Title>
       <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit page.tsx file.
+        The number one platform for personalized game recommendations and the latest gaming news.
       </Text>
-    </>
+    </Box>
   );
 }
