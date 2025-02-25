@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Esports = () => {
-  return <div>page</div>;
+  return <div>Esports</div>;
 };
 
 export default Esports;

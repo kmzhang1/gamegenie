@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Esports = () => {
-  return <div>page</div>;
+const News = () => {
+  return <div>News</div>;
 };
 
-export default Esports;
+export default News;

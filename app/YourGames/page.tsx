@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Esports = () => {
-  return <div>page</div>;
+const YourGames = () => {
+  return <div>Your Games</div>;
 };
 
-export default Esports;
+export default YourGames;

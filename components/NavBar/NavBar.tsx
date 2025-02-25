@@ -20,8 +20,8 @@ const data = [
   { link: '', label: 'Notifications', icon: IconBellRinging },
   { link: '/', label: 'Home Feed', icon: IconReceipt2 },
   { link: '/News', label: 'Latest News', icon: IconFingerprint },
-  { link: '/Streaming', label: 'Your Games', icon: IconKey },
-  { link: '/YourGames', label: 'Streaming', icon: IconDatabaseImport },
+  { link: '/Streaming', label: 'Streaming', icon: IconKey },
+  { link: '/YourGames', label: 'Your Games', icon: IconDatabaseImport },
   { link: '/Esports', label: 'Esports', icon: Icon2fa },
   { link: '/Settings', label: 'Other Settings', icon: IconSettings },
 ];

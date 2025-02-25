@@ -23,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body style={{ display: 'flex' }}>
         <MantineProvider theme={theme}>
-          <NavBar /> {/* Add NavBar here */}
-          <main style={{ flex: 1 }}>{children}</main> {/* Page content */}
+          <NavBar />
+          <main style={{ flex: 1 }}>{children}</main>
         </MantineProvider>
       </body>
     </html>

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Esports = () => {
-  return <div>page</div>;
+const Streaming = () => {
+  return <div>Streaming</div>;
 };
 
-export default Esports;
+export default Streaming;
